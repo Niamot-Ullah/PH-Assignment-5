@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>PH-Assignment - 5</title>
+</head>
+
+<body class="bg-slate-300 ">
+    <div class=" w-10/12 mx-auto">
+        <Header class="py-10">
+            <!-- nav section starts here  -->
+                    <nav class=" flex justify-between bg-white p-6 rounded-2xl">
+                        <div class="flex gap-1">
+                            <img src="assets/logo.png" alt="" class="w-10">
+                            <h1 class="text-2xl content-center font-light">Dev<span class="font-bold">Board</span></h1>
+                        </div>
+                        <div class="flex gap-10">
+                            <div class="flex items-center gap-2  bg-slate-300 px-4 rounded-3xl">
+                                <img src="assets/checkbox.png" alt="" class="w-6 h-6">
+                                <h1 id="completedTask" class="font-extrabold text-2xl mb-1">23</h1>
+                            </div>
+                            <div>
+                                <img id="colorTelesMati" src="assets/theme-btn.png" alt="">
+                            </div>
+                        </div>
+                    </nav>
+                </Header>
+
+<!-- taskBoard section starts  -->
+        <main class=" grid grid-cols-4 gap-8 ">
+<!-- left -->
+            <div class="col-span-3 bg-white -mt-2">
+                
+                <!-- board section  -->
+                <div class=" -mb-2 bg-white rounded-xl -mt-12 ">
+                    <div class="grid grid-cols-4 m-10 gap-4 ">
+                        <!-- //task Assigned 1 -->
+                        <div class="flex gap-2 my-7 px-5 rounded-xl bg-gray-300 items-center ">
+                            <img src="assets/checkbox.png" alt="" class="w-8 h-8 p-2 bg-white rounded-xl">
+                            <div>
+                                <p>Task Assigned</p>
+                                <h1 id="taskAssigned" class="text-xl font-bold">6</h1>
+                            </div>
+                        </div>
+    
+                        <!-- //task Assigned 2 -->
+                        <div id="taskAssigned2" class="flex text-white text-xl gap-8 my-7 px-5 rounded-xl items-center col-span-2 bg-gradient-to-r from-indigo-500 to-blue-300 ">
+                            <img src="assets/board.png" alt="" class="w-12 h-12">
+                            <p>Discover Something <br> New Today!</p>
+                        </div>
+                        <!-- //task Assigned 3 -->
+                        <div class="flex gap-2 my-6 p-5 rounded-xl bg-gray-300 items-center">
+                            <img src="assets/calender.png" alt="" class="w-8 h-8 p-2 bg-white rounded-xl">
+                            <div id="presentDate">Wed, <br><span class="text-lg  font-bold">Jul 28 2025</span></div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                
+
+                <!-- task section  -->
+                <div class="bg-white rounded-xl grid grid-cols-3 ">
+                    <!-- Task 1 -->
+                    <div  class="p-5 mx-5 space-y-3 rounded-xl bg-slate-300">
+                        <p class="p-1 max-w-20 text-sm rounded-lg bg-slate-100 text-center">ShopEase</p>
+                        <h1 class="font-semibold text-lg">Fix Mobile Button Issue</h1>
+                        <p class="py-5 px-1 text-sm rounded-lg bg-slate-100 ">Debug using Chrome DevTools, check for overlapping</p>
+                        <hr>
+                        <div class="flex justify-between text-sm">
+                            <p>Deadline <br><span class="font-bold">21 March 2025</span></p>
+                            <button id="task1" class="btn bg-blue-500 border-none text-slate-100">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 2 -->
+                    <div class="p-5 mx-5 space-y-3 rounded-xl bg-slate-300">
+                        <p class="p-1 max-w-20 text-sm rounded-lg bg-slate-100 text-center">CloudSync</p>
+                        <h1 class="font-semibold text-lg">Add Dark Mode</h1>
+                        <p class="py-5 px-1 text-sm rounded-lg bg-slate-100 ">Store the user's preference in localStorage, update CSS variables.</p>
+                        <hr>
+                        <div class="flex justify-between text-sm">
+                            <p>Deadline <br><span class="font-bold">21 March 2025</span></p>
+                            <button id="task2" class="btn bg-blue-500 border-none text-slate-100 ">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 3 -->
+                    <div class="p-5 mx-5 space-y-3 rounded-xl bg-slate-300">
+                        <p class="p-1 max-w-20 text-sm rounded-lg bg-slate-100 text-center">SwiftPay</p>
+                        <h1 class="font-semibold text-lg">Optimize  Home page </h1>
+                        <p class="py-5 px-1 text-sm rounded-lg bg-slate-100 ">Debug using Chrome DevTools, check for overlapping elements</p>
+                        <hr>
+                        <div class="flex justify-between text-sm">
+                            <p>Deadline <br><span class="font-bold">21 March 2025</span></p>
+                            <button id="task3" class="btn bg-blue-500 border-none text-slate-100">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 4 -->
+                    <div class="p-5 m-5 space-y-3 rounded-xl bg-slate-300">
+                        <p class="p-1 max-w-20 text-sm rounded-lg bg-slate-100 text-center">Meta</p>
+                        <h1 class="font-semibold text-lg">Fix Mobile Button Issue</h1>
+                        <p class="py-5 px-1 text-sm rounded-lg bg-slate-100 ">Debug using Chrome DevTools, check for overlapping</p>
+                        <hr>
+                        <div class="flex justify-between text-sm">
+                            <p>Deadline <br><span class="font-bold">21 March 2025</span></p>
+                            <button id="task4" class="btn bg-blue-500 border-none text-slate-100">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 5 -->
+                    <div class="p-5 m-5 space-y-3 rounded-xl bg-slate-300">
+                        <p class="p-1 max-w-20 text-sm rounded-lg bg-slate-100 text-center">Google LLC</p>
+                        <h1 class="font-semibold text-lg">Integrate OpenAI API </h1>
+                        <p class="py-5 px-1 text-sm rounded-lg bg-slate-100 ">Debug using Chrome DevTools, check for overlapping</p>
+                        <hr>
+                        <div class="flex justify-between text-sm">
+                            <p>Deadline <br><span class="font-bold">21 March 2025</span></p>
+                            <button id="task5" class="btn bg-blue-500 border-none text-slate-100">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- Task 6 -->
+                    <div class="p-5 m-5 space-y-3 rounded-xl bg-slate-300">
+                        <p class="p-1 max-w-20 text-sm rounded-lg bg-slate-100 text-center">Glassdoar</p>
+                        <h1 class="font-semibold text-lg">Improve Job searching </h1>
+                        <p class="py-5 px-1 text-sm rounded-lg bg-slate-100 ">Debug using Chrome DevTools, check for overlapping</p>
+                        <hr>
+                        <div class="flex justify-between text-sm">
+                            <p>Deadline <br><span class="font-bold">21 March 2025</span></p>
+                            <button id="task6" class="btn bg-blue-500 border-none text-slate-100">Completed</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+
+
+            <!-- right -->
+            <!-- history section  -->
+            <div class="bg-white p-5 rounded-xl -mt-4 ">
+                <div class="flex gap-3 pb-4 justify-center">
+                    <img class="w-6 h-6" src="assets/activity.png" alt="">
+                    <h2>Activity Log</h2>
+                </div>
+                <div class="text-center">
+                    <button id="clearHistory" class="btn bg-blue-500 text-gray-100 border-none ">Clear History</button>
+                </div>
+<!-- history -->
+                <div id="historyAdd" class="">
+                    <!-- <p class="my-3 mt-10 
+                 bg-slate-300 py-1 px-3 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p>
+                <p class="my-3 bg-slate-300 py-1 px-3 rounded-lg">You have Complete The Task Add Dark Mode at 12:48:15 PM</p> -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="File/utility.js"></script>
+    <script src="File/taskBoard.js"></script>
+    <script src="File/tasks.js"></script>
+    <script src="File/clearHistory.js"></script>
+    <script src="File/color.js"></script>
+</body>
+</html>
